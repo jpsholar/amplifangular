@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: NavComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class InternalRoutingModule {
-  constructor(){
-    console.log('internal module loaded');
-  }
-}
+export class InternalRoutingModule {}
