@@ -17,4 +17,8 @@ export class AuthService {
     return this.amplifyService.authStateChange$;
   }
 
+  signOut(): Promise<boolean> {
+    return this.amplifyService.auth().signOut();
+  }
+
 }
