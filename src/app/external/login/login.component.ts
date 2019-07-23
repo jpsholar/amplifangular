@@ -13,9 +13,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.authService.stateChange()
-      .subscribe(({ state, user }) => {
+      .subscribe(({ state }) => {
         if (state === 'signedIn') {
-          console.log(state);
           return this.router.navigate(['/']);
         }
       });
