@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: './external/external.module#ExternalModule'
+  },
+  {
+    path: '',
+    loadChildren: './internal/internal.module#InternalModule'
   }
 ];
 
