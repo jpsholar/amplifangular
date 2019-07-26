@@ -1,4 +1,8 @@
-# Client
+## AWS Config
+
+Modify src/aws-exports.ts with AWS Cognito pool id, client id, and region.
+
+## Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
